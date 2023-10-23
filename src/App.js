@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
-import clickSound from './clicksound.wav';
-import ResultPrompt from './ResultPrompt';
+import "../../styles/pages/games/Jitter.css";
+import clickSound from '../../assets/games/jitter/clicksound.wav';
+import ResultPrompt from '../../components/games/Jitter/ResultPrompt';
 
-function App() {
+export const Jitter = () => {
   const [score, setScore] = useState(0);
   const [clicks, setClicks] = useState(0);
   const [timerOptions] = useState([5, 10, 30]);
@@ -84,7 +84,8 @@ function App() {
   return (
     <div className='sun'>
     <div className="jitter-click-game">
-      <h1 className='title'>JITTER CLICK GAME</h1>
+      <h1 className='title-game'>JITTER CLICK GAME</h1>
+      <h6 className="sub">Boink the button desperately before the timer ends..</h6>
       <div className="game-container">
         <div className="left-panel">
           <p className='box'>{clicks}</p>
@@ -166,4 +167,4 @@ function App() {
   );
 }
 
-export default App;
+
