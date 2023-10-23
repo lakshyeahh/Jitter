@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import "../../styles/pages/games/Jitter.css";
-import clickSound from '../../assets/games/jitter/clicksound.wav';
-import ResultPrompt from '../../components/games/Jitter/ResultPrompt';
+import './App.css';
+import clickSound from './clicksound.wav';
+import ResultPrompt from './ResultPrompt';
 
 export const Jitter = () => {
   const [score, setScore] = useState(0);
